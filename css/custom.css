@@ -1,0 +1,520 @@
+/* ==========================================================================
+   EDIMAI - Custom Redesign Styles (UX/UI Modernization)
+   ========================================================================== */
+
+:root {
+  /* Color Palette */
+  --edimai-slate: #1E293B;       /* Deep Steel Slate */
+  --edimai-gold: #F59E0B;        /* Industrial Amber Gold */
+  --edimai-gold-hover: #D97706;  /* Darker Gold for hover */
+  --edimai-cyan: #0EA5E9;        /* Engineering Teal/Cyan */
+  --edimai-bg-light: #F8FAFC;    /* Cool Platinum Gray */
+  --edimai-text-dark: #0F172A;   /* Charcoal Text */
+  --edimai-whatsapp: #25D366;    /* WhatsApp Green */
+
+  /* Fonts */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  
+  /* Shadows & Glass */
+  --shadow-glass: 0 10px 30px -10px rgba(0,0,0,0.08);
+  --shadow-hover: 0 20px 40px -10px rgba(0,0,0,0.15);
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-blur: blur(12px);
+}
+
+/* Base Typo Overrides */
+body {
+  font-family: var(--font-body) !important;
+  color: var(--edimai-text-dark) !important;
+  background-color: var(--edimai-bg-light) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading) !important;
+  font-weight: 700;
+  color: var(--edimai-slate);
+}
+
+/* ================== Topbar & Navbar ================== */
+.topbar-redesign {
+  background-color: var(--edimai-slate) !important;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.topbar-redesign a {
+  color: white;
+  transition: opacity 0.3s;
+}
+
+.topbar-redesign a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.navbar-redesign {
+  background: var(--glass-bg) !important;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.navbar-redesign .nav-item.nav-link {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--edimai-slate) !important;
+  position: relative;
+}
+
+.navbar-redesign .nav-item.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--edimai-gold);
+  transition: width 0.3s;
+}
+
+.navbar-redesign .nav-item.nav-link:hover::after,
+.navbar-redesign .nav-item.nav-link.active::after {
+  width: 100%;
+}
+
+.btn-gold {
+  background-color: var(--edimai-gold);
+  color: white !important;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 10px 24px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 14px 0 rgba(245, 158, 11, 0.39);
+}
+
+.btn-gold:hover {
+  background-color: var(--edimai-gold-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.23);
+}
+
+/* ================== Hero Banner Split ================== */
+.hero-split {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--edimai-slate);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.hero-bg-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background-image: url('../images/carousel-1.jpg');
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  opacity: 0.8;
+}
+
+.hero-overlay-gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--edimai-slate) 5%, transparent 50%);
+  z-index: 1;
+}
+
+/* Trust Badges in Hero */
+.trust-badges {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.trust-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  background: rgba(255,255,255,0.1);
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.trust-badge-item i {
+  color: var(--edimai-gold);
+}
+
+/* ================== Section Padding ================== */
+.section-padding {
+  padding: 100px 0;
+}
+
+/* ================== Product Cards Glassmorphism ================== */
+.product-card-modern {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-glass);
+  transition: all 0.4s ease;
+  height: 100%;
+  border: 1px solid rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-modern:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-hover);
+}
+
+.product-card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 240px;
+}
+
+.product-card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.product-card-modern:hover .product-card-img-wrapper img {
+  transform: scale(1.1);
+}
+
+.product-category-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--edimai-slate);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.product-card-content {
+  padding: 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.product-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.spec-pill {
+  background: var(--edimai-bg-light);
+  color: var(--edimai-slate);
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid #E2E8F0;
+}
+
+.product-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-outline-slate {
+  border: 2px solid var(--edimai-slate);
+  color: var(--edimai-slate);
+  background: transparent;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 8px 16px;
+  flex-grow: 1;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.btn-outline-slate:hover {
+  background: var(--edimai-slate);
+  color: white;
+  text-decoration: none;
+}
+
+.btn-whatsapp-icon {
+  background: var(--edimai-whatsapp);
+  color: white;
+  border-radius: 8px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.btn-whatsapp-icon:hover {
+  background: #1DA851;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* ================== Why Choose EDIMAI ================== */
+.feature-box {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-glass);
+  text-align: center;
+  height: 100%;
+  transition: all 0.3s;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.feature-box:hover {
+  box-shadow: var(--shadow-hover);
+  border-color: var(--edimai-cyan);
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(14, 165, 233, 0.1);
+  color: var(--edimai-cyan);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin: 0 auto 20px;
+  transition: all 0.3s;
+}
+
+.feature-box:hover .feature-icon {
+  background: var(--edimai-cyan);
+  color: white;
+}
+
+/* ================== Material Comparison Tabs ================== */
+.comparison-tabs .nav-link {
+  border-radius: 8px;
+  color: var(--edimai-slate);
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+.comparison-tabs .nav-link.active {
+  background-color: var(--edimai-slate);
+  color: white;
+}
+
+.tab-pane-content {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: var(--shadow-glass);
+  margin-top: 20px;
+}
+
+/* ================== Bottom CTA Banner ================== */
+.bottom-cta-banner {
+  background: var(--edimai-slate);
+  padding: 80px 0;
+  text-align: center;
+  border-radius: 24px;
+  margin: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bottom-cta-banner h2 {
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.bottom-cta-banner p {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ================== Floating WhatsApp CTA ================== */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--edimai-whatsapp) !important;
+  color: white !important;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+  z-index: 1000;
+  transition: all 0.3s;
+  text-decoration: none !important;
+  overflow: visible;
+}
+.floating-whatsapp:hover, .floating-whatsapp:active, .floating-whatsapp:focus {
+  background-color: #1DA851 !important;
+  color: white !important;
+  transform: scale(1.1);
+  text-decoration: none !important;
+}
+
+/* Pulse Animation */
+.floating-whatsapp::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50% !important;
+  background: var(--edimai-whatsapp);
+  opacity: 0.6;
+  z-index: -1;
+  animation: pulse 2s infinite;
+}
+
+/* Hide back to top or style it nicely so it doesn't conflict */
+.back-to-top {
+  display: none !important;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+@media (max-width: 991px) {
+  .hero-bg-image { width: 100%; opacity: 0.3; clip-path: none; }
+  .hero-overlay-gradient { width: 100%; background: var(--edimai-slate); opacity: 0.8; }
+  .hero-content h1 { font-size: 2.5rem; }
+}
+
+/* Additional Product Detail Styles */
+.product-detail-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: var(--shadow-glass);
+  border: 1px solid rgba(0,0,0,0.05);
+  overflow: hidden;
+  padding: 40px;
+}
+
+.product-gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.product-img-frame {
+  background: var(--edimai-bg-light);
+  border-radius: 12px;
+  padding: 15px;
+  border: 1px solid #E2E8F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 280px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.product-img-frame img {
+  max-height: 240px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.product-img-frame img:hover {
+  transform: scale(1.03);
+}
+
+.product-info-box h3 {
+  font-size: 1.15rem;
+  color: var(--edimai-slate);
+  margin-top: 20px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-info-box h3 i {
+  color: var(--edimai-cyan);
+}
+
+.custom-bullet-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.custom-bullet-list li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #334155;
+}
+
+.custom-bullet-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--edimai-gold);
+  font-weight: bold;
+}
+

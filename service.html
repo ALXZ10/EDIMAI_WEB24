@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
-    <title>EDIMAI - Rejillas Industriales</title>
+    <title>Catálogo de Productos | EDIMAI - Rejillas Industriales</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    
-    <!-- Google -->
-    <meta itemprop="name" content="Rejillas EDIMAI" />
-    <meta itemprop="description"
-          content="EDIMAI, expertos en rejillas industriales, garantizando seguridad y eficiencia. Brinda servicio excepcional y asesoramiento experto en cada etapa del proceso." />
+
+    <!-- SEO Metadata -->
+    <meta name="description" content="Explore el catálogo completo de rejillas industriales EDIMAI: Acero al carbón, acero inoxidable, fibra de vidrio FRP y sujetadores.">
+    <meta name="keywords" content="Catálogo rejillas industriales, Rejilla electroforjada, Rejilla fibra de vidrio, Sujetadores para rejilla">
+    <meta name="robots" content="index, follow">
 
     <!-- Favicon -->
     <link href="images/logo.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <!-- Google Web Fonts (Outfit & Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -27,36 +28,32 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Custom Redesign Styles -->
+    <link href="css/custom.css" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+    <div class="container-fluid topbar-redesign pt-2 pb-2 d-none d-lg-block">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <p><i class="fa fa-envelope mr-2"></i>distribuidora.edimai01@gmail.com</p>
-                        <p class="text-body px-3">|</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>55 45 10 35 56</p>
+                        <a href="mailto:distribuidora.edimai01@gmail.com"><i class="fa fa-envelope mr-2"></i>distribuidora.edimai01@gmail.com</a>
+                        <span class="px-3">|</span>
+                        <a href="tel:5545103556"><i class="fa fa-phone-alt mr-2"></i>55 45 10 35 56</a>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-primary px-3"
-                            href="https://www.facebook.com/p/Distribuidora-Edimai-100079783361178/?_rdr"
-                            target="_blank">
+                        <a class="px-3" href="https://www.facebook.com/p/Distribuidora-Edimai-100079783361178/?_rdr" target="_blank">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-
-                        <a href="https://api.whatsapp.com/send?phone=525545103556" target="_blank"
-                            class="text-primary px-3">
-
-                            <img class="fab" src="images/whatsapp-logo(1).png" alt="WhatsApp">
-
+                        <a href="https://api.whatsapp.com/send?phone=525545103556" target="_blank" class="px-3 text-white">
+                            <i class="fab fa-whatsapp" style="font-size: 1.2rem; color: var(--edimai-whatsapp);"></i> Escríbenos por WhatsApp
                         </a>
-
                     </div>
                 </div>
             </div>
@@ -65,11 +62,11 @@
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-fluid position-relative nav-bar p-0 sticky-top navbar-redesign">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+            <nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3 py-lg-0 pl-3 pl-lg-5">
                 <a href="index.html" class="navbar-brand">
-                    <img class="w-100" src="images/logo.jpg" alt="logo">
+                    <img class="w-100" src="images/logo.jpg" alt="Logo EDIMAI Rejillas" style="max-width: 180px;">
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -81,6 +78,9 @@
                         <a href="service.html" class="nav-item nav-link active">Productos</a>
                         <a href="contact.html" class="nav-item nav-link">Contacto</a>
                     </div>
+                    <div class="ml-lg-4 d-none d-lg-block">
+                        <a href="https://api.whatsapp.com/send?phone=525545103556&text=Hola,%20busco%20solicitar%20una%20cotizaci%C3%B3n" target="_blank" class="btn btn-gold text-white">Solicitar Cotización</a>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -88,92 +88,147 @@
     <!-- Navbar End -->
 
     <!-- Header Start -->
-    <div class="container-fluid page-header">
-        <div class="container">
-            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Productos</h3>
-                <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" href="">Inicio</a></p>
+    <div class="container-fluid py-5" style="background: var(--edimai-slate); color: white;">
+        <div class="container py-4">
+            <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                <h1 class="display-4 text-white font-weight-bold text-uppercase">Nuestros Productos</h1>
+                <div class="d-inline-flex text-white-50">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Inicio</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Productos</p>
+                    <p class="m-0 text-uppercase text-white">Productos</p>
                 </div>
             </div>
         </div>
     </div>
     <!-- Header End -->
 
-    <!-- Productos Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Productos</h6>
-                <h1>Explora Nuestros Productos</h1>
+    <!-- Products Grid Start -->
+    <div class="container-fluid section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-uppercase" style="letter-spacing: 3px; color: var(--edimai-cyan); font-weight: 700;">Catálogo Completo</h6>
+                <h2>Soluciones Industriales de Alta Resistencia</h2>
             </div>
+            
             <div class="row">
+                <!-- Product 1 -->
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="images/productos-1.jpg" alt="productos-1">
-                        <a class="destination-overlay text-white text-decoration-none" href="fibra_vidrio.html">
-                            <h5 class="text-white">Rejilla de Fibra de Vidrio</h5>
-                            <span>EDIMAI</span>
-                        </a>
+                    <div class="product-card-modern">
+                        <div class="product-card-img-wrapper">
+                            <div class="product-category-tag">Acero al Carbón</div>
+                            <img src="images/productos-3.jpg" alt="Rejilla Electroforjada de Acero al Carbón" loading="lazy">
+                        </div>
+                        <div class="product-card-content">
+                            <h3>Rejilla Electroforjada de Acero al Carbón</h3>
+                            <p class="text-muted mb-3" style="font-size: 0.9rem;">Ideal para paso peatonal e industrial. Acabado natural o galvanizado por inmersión en caliente.</p>
+                            <div class="product-specs">
+                                <span class="spec-pill">Alta Resistencia</span>
+                                <span class="spec-pill">Galvanizado</span>
+                            </div>
+                            <div class="product-actions mt-auto">
+                                <a href="acero_carbon.html" class="btn btn-outline-slate">Ver Ficha</a>
+                                <a href="https://api.whatsapp.com/send?phone=525545103556&text=Cotizar%20Rejilla%20de%20Acero%20al%20Carb%C3%B3n" target="_blank" class="btn-whatsapp-icon" title="Cotizar">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Product 2 -->
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="images/productos-3.jpg" alt="productos-3">
-                        <a class="destination-overlay text-white text-decoration-none" href="acero_carbon.html">
-                            <h5 class="text-white">Rejilla de Acero al Carbón</h5>
-                            <span>EDIMAI</span>
-                        </a>
+                    <div class="product-card-modern">
+                        <div class="product-card-img-wrapper">
+                            <div class="product-category-tag">Inoxidable</div>
+                            <img src="images/productos-4.jpg" alt="Rejilla de Acero Inoxidable 304/316" loading="lazy">
+                        </div>
+                        <div class="product-card-content">
+                            <h3>Rejilla de Acero Inoxidable (304 y 316)</h3>
+                            <p class="text-muted mb-3" style="font-size: 0.9rem;">Máxima resistencia a la corrosión. Perfecta para industrias alimenticias, químicas y farmacéuticas.</p>
+                            <div class="product-specs">
+                                <span class="spec-pill">Anticorrosión</span>
+                                <span class="spec-pill">Grado Alimenticio</span>
+                            </div>
+                            <div class="product-actions mt-auto">
+                                <a href="acero_inoxidable.html" class="btn btn-outline-slate">Ver Ficha</a>
+                                <a href="https://api.whatsapp.com/send?phone=525545103556&text=Cotizar%20Rejilla%20de%20Acero%20Inoxidable" target="_blank" class="btn-whatsapp-icon" title="Cotizar">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Product 3 -->
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="images/productos-4.jpg" alt="productos-4">
-                        <a class="destination-overlay text-white text-decoration-none" href="acero_inoxidable.html">
-                            <h5 class="text-white">Rejilla de Acero Inoxidable</h5>
-                            <span>EDIMAI</span>
-                        </a>
+                    <div class="product-card-modern">
+                        <div class="product-card-img-wrapper">
+                            <div class="product-category-tag">Fibra de Vidrio</div>
+                            <img src="images/productos-1.jpg" alt="Rejillas de Fibra de Vidrio FRP" loading="lazy">
+                        </div>
+                        <div class="product-card-content">
+                            <h3>Rejillas de Fibra de Vidrio (FRP)</h3>
+                            <p class="text-muted mb-3" style="font-size: 0.9rem;">Moldeadas y pultruidas. Ligeras, dieléctricas y con excelente resistencia química a ambientes agresivos.</p>
+                            <div class="product-specs">
+                                <span class="spec-pill">Dieléctrica</span>
+                                <span class="spec-pill">Ultra Ligera</span>
+                            </div>
+                            <div class="product-actions mt-auto">
+                                <a href="fibra_vidrio.html" class="btn btn-outline-slate">Ver Ficha</a>
+                                <a href="https://api.whatsapp.com/send?phone=525545103556&text=Cotizar%20Rejilla%20de%20Fibra%20de%20Vidrio" target="_blank" class="btn-whatsapp-icon" title="Cotizar">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4"></div>
+
+                <!-- Product 4 -->
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="images/productos-6.png" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="sujetadores.html">
-                            <h5 class="text-white">Sujetadores</h5>
-                            <span>EDIMAI</span>
-                        </a>
+                    <div class="product-card-modern">
+                        <div class="product-card-img-wrapper">
+                            <div class="product-category-tag">Fijación</div>
+                            <img src="images/productos-6.png" alt="Sujetadores y Grapas" loading="lazy">
+                        </div>
+                        <div class="product-card-content">
+                            <h3>Grapas y Sujetadores Industriales</h3>
+                            <p class="text-muted mb-3" style="font-size: 0.9rem;">Clips y accesorios de fijación seguros para cualquier tipo de rejilla. Fácil instalación garantizada.</p>
+                            <div class="product-specs">
+                                <span class="spec-pill">Tipo Silla</span>
+                                <span class="spec-pill">Tipo M</span>
+                            </div>
+                            <div class="product-actions mt-auto">
+                                <a href="sujetadores.html" class="btn btn-outline-slate">Ver Ficha</a>
+                                <a href="https://api.whatsapp.com/send?phone=525545103556&text=Cotizar%20Sujetadores%20para%20Rejilla" target="_blank" class="btn-whatsapp-icon" title="Cotizar">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4"></div>
             </div>
         </div>
     </div>
-    <!-- Productos End -->
+    <!-- Products Grid End -->
+
+    <!-- Floating WhatsApp Start -->
+    <a href="https://api.whatsapp.com/send?phone=525545103556" class="floating-whatsapp" target="_blank" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Floating WhatsApp End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="background-color: var(--edimai-slate) !important;">
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
-                <a href="" class="navbar-brand">
-                    <img class="w-100" src="images/logo.jpg" alt="logo">
+                <a href="index.html" class="navbar-brand">
+                    <img class="w-100" src="images/logo.jpg" alt="logo" style="filter: grayscale(100%) brightness(200%); max-width: 150px;">
                 </a>
-                <p>Nuestra amplia gama de rejillas de acero está diseñada para enfrentar los desafíos más exigentes,
-                    garantizando seguridad y eficiencia en cada aplicación.</p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Nuestras Redes Sociales
-                </h6>
+                <p class="mt-3">Nuestra amplia gama de rejillas de acero está diseñada para enfrentar los desafíos más exigentes, garantizando seguridad y eficiencia en cada aplicación.</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 2px;">Síguenos</h6>
                 <div class="d-flex justify-content-start">
-                    <a class="btn btn-outline-light btn-square mr-2"
-                        href="https://www.facebook.com/p/Distribuidora-Edimai-100079783361178/?_rdr" target="_blank">
+                    <a class="btn btn-outline-light btn-square mr-2" href="https://www.facebook.com/p/Distribuidora-Edimai-100079783361178/?_rdr" target="_blank">
                         <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=525545103556" target="_blank"
-                        class="btn btn-outline-light btn-square mr-2">
-
-                        <img class="fab" src="images/whatsapp-logo(1).png" alt="WhatsApp">
-
                     </a>
                 </div>
             </div>
@@ -181,34 +236,29 @@
             <div class="col-lg-3 col-md-6 mb-5"></div>
 
             <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">EDIMAI ofrece</h5>
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 2px;">EDIMAI ofrece</h5>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>Nosotros</a>
-                    <a class="text-white-50 mb-2" href="service.html"><i
-                            class="fa fa-angle-right mr-2"></i>Productos</a>
-                    <a class="text-white-50 mb-2" href="acero_carbon.html"><i
-                            class="fa fa-angle-right mr-2"></i>Rejillas de Acero al Carbón</a>
-                    <a class="text-white-50 mb-2" href="acero_inoxidable.html"><i class="fa fa-angle-right mr-2"></i>Rejillas de Acero
-                        Inoxidable</a>
-                    <a class="text-white-50 mb-2" href="fibra_vidrio.html"><i class="fa fa-angle-right mr-2"></i>Rejillas de Fibra de
-                        Vidrio</a>
+                    <a class="text-white-50 mb-2" href="service.html"><i class="fa fa-angle-right mr-2"></i>Productos</a>
+                    <a class="text-white-50 mb-2" href="acero_carbon.html"><i class="fa fa-angle-right mr-2"></i>Rejillas de Acero al Carbón</a>
+                    <a class="text-white-50 mb-2" href="acero_inoxidable.html"><i class="fa fa-angle-right mr-2"></i>Rejillas de Acero Inoxidable</a>
+                    <a class="text-white-50 mb-2" href="fibra_vidrio.html"><i class="fa fa-angle-right mr-2"></i>Rejillas de Fibra de Vidrio</a>
                     <a class="text-white-50 mb-2" href="sujetadores.html"><i class="fa fa-angle-right mr-2"></i>Sujetadores</a>
                 </div>
             </div>
+
             <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contactanos</h5>
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 2px;">Contáctanos</h5>
                 <p><i class="fa fa-map-marker-alt mr-2"></i>Coacalco, Estado de México, 55712</p>
                 <p><i class="fa fa-phone-alt mr-2"></i>55 45 10 35 56</p>
                 <p><i class="fa fa-envelope mr-2"></i>distribuidora.edimai01@gmail.com</p>
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
-        style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="background-color: #0f172a !important; border-color: rgba(256, 256, 256, .05) !important;">
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white-50">Copyright &copy; <a href="#>Rejillas EDIMAI</a>. Todos los derechos reservados.</a>
-                </p>
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Rejillas EDIMAI</a>. Todos los derechos reservados.</p>
             </div>
             <div class="col-lg-6 text-center text-md-right">
                 <p class="m-0 text-white-50">Designed by Alexis García</p>
@@ -216,9 +266,6 @@
         </div>
     </div>
     <!-- Footer End -->
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
